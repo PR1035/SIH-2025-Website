@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQs — Rain Water Harvesting</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* small page-specific container spacing so FAQ looks good on your existing gradient background */
+    .page-wrapper {
+      max-width: 1000px;
+      margin: 36px auto;
+      padding: 30px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 14px;
+      box-shadow: 0 6px 30px rgba(10,20,40,0.08);
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .faq-header {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: #ffffff;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: initial;
+    }
+
+    .faq-sub {
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 24px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <!-- reuse your gradient/title etc if you want — header nav expects index.html to already include header image -->
+  <div class="gradient-animation">RAIN WATER HARVESTING </div>
+
+  <!-- optional: keep header-image if you want the same look -->
+  <div class="header-image"><img src="C:\Users\CWC\Downloads\generated-image_1-removebg-preview.png" alt="Rainwater Logo" /></div>
+
+  <!-- include same navbar markup (or include server-side) -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html#homepage">Home Page</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li class="dropdown">
+        <a href="index.html#contactus" class="dropbtn">Contact Us ▼</a>
+        <div class="dropdown-content">
+          <a href="index.html#details">Details</a>
+          <a href="faqs.html">FAQs</a>
+        </div>
+      </li>
+      <li><a href="faqs.html">FAQs</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-wrapper" role="main" aria-labelledby="faq-title">
+    <h1 id="faq-title" class="faq-header">Frequently Asked Questions</h1>
+    <p class="faq-sub">Answers to common questions about rain water harvesting. Click a question to expand the answer.</p>
+
+    <section class="faq-list" aria-label="FAQ list">
+      <!-- FAQ item template -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is rain water harvesting and how does it work?
+          <span class="chev" aria-hidden="true">▸</span>
+        </button>
+        <div class="faq-answer" hidden>
+          Rain water harvesting is the collection and storage of rain from roofs or other surfaces to use later, either through storage tanks, recharge pits for groundwater, or direct re-use. You capture runoff, filter it, and either store it or channel it to recharge the ground.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How much space do I need to install a simple rooftop system?
+          <span class="chev" aria-hidden="true">▸</span>
+        </button>
+        <div class="faq-answer" hidden>
+          A rooftop tank or a small storage system for household use can be installed with minimal rooftop and ground space. For groundwater recharge, small recharge pits or percolation trenches can be fitted in yards or open areas.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Does rainwater need treatment before using for drinking?
+          <span class="chev" aria-hidden="true">▸</span>
+        </button>
+        <div class="faq-answer" hidden>
+          Yes — if you intend to use collected rainwater for drinking, it must be properly filtered and disinfected (e.g., sediment filters, activated carbon, and UV or chlorination). For non-potable uses like gardening, washing, or flushing, light filtration may be sufficient.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can rainwater harvesting help reduce flooding in my area?
+          <span class="chev" aria-hidden="true">▸</span>
+        </button>
+        <div class="faq-answer" hidden>
+          Yes. By capturing rooftop runoff and reducing surface runoff, rainwater harvesting reduces load on drains and local flood risk, especially during heavy storms.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Where can I find government support or guidelines for implementation?
+          <span class="chev" aria-hidden="true">▸</span>
+        </button>
+        <div class="faq-answer" hidden>
+          Many national and local programs provide technical guidelines and incentives. Look up central/state water mission pages (example: Jal Jeevan Mission guidelines) and local municipal schemes for subsidies and guidance.
+        </div>
+      </div>
+
+      <!-- Add more items as needed -->
+    </section>
+  </main>
+
+  <script>
+    // Accessible accordion behavior: toggle visibility, update aria-expanded
+    (function () {
+      const items = document.querySelectorAll('.faq-item');
+      items.forEach(item => {
+        const btn = item.querySelector('.faq-question');
+        const panel = item.querySelector('.faq-answer');
+
+        btn.addEventListener('click', () => {
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          // Optionally: collapse all others (uncomment next block to keep single-open behavior)
+          // items.forEach(i => {
+          //   i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          //   i.querySelector('.faq-answer').hidden = true;
+          // });
+
+          btn.setAttribute('aria-expanded', String(!expanded));
+          panel.hidden = expanded; // if expanded true => hide; else show
+        });
+
+        // allow keyboard toggling: Enter/Space already triggers click for buttons, so accessible by default
+      });
+    })();
+  </script>
+
+</body>
+</html>
