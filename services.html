@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Rainwater Saving Calculator</title>
+<style>
+  .container {
+    background: #e0f7fa;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  label, input, select, button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 8px;
+    font-size: 1rem;
+  }
+  button {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1565c0;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Find out how much fresh water you can save using NeeRain!</h2>
+    <form id="rainForm">
+      <label>Roof area in Square Feet:</label>
+      <input type="number" id="roofArea" required />
+      <label>State:</label>
+      <select id="stateSelect" required>
+        <option value="" disabled selected>Choose Option</option>
+      </select>
+      <label>City/Area:</label>
+      <select id="citySelect" required>
+        <option value="" disabled selected>Choose Option</option>
+      </select>
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="java.js"></script>
+</body>
+</html>
