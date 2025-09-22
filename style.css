@@ -314,14 +314,14 @@ body {
  .flip-card-container {
   display: flex;
   justify-content: space-around;
-  margin: 50px 0 30px 0;
+  margin: 50px 0 50px 0;
   gap: 20px;
 }
 
 .flip-card {
   background-color: transparent;
   width: 270px;
-  height: 220px;
+  height: 300px;
   perspective: 1000px;
 }
 
@@ -366,7 +366,7 @@ body {
 
 .flip-card-back {
   transform: rotateY(180deg);
-  font-size: 18px;
+  font-size: 13px;
   color: #194F46;
   text-align: center;
 }
