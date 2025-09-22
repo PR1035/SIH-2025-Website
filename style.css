@@ -35,7 +35,7 @@
   }
 }
 body {
-  background: linear-gradient(120deg, #62cff4 0%, #2c67f2 100%);
+  background: linear-gradient(120deg, #2c8858 0%, #2c67f2 100%);
 }
 
 /* Navigation Bar */
@@ -186,8 +186,8 @@ body {
 }
 
 .point {
-  background: rgba(173,216,230,0.12);
-  color: #086972;
+  background: rgba(236, 9, 217, 0.12);
+  color: #111212c7;
   font-size: 1.12em;
   font-weight: 500;
   padding: 16px 22px;
@@ -200,7 +200,7 @@ body {
 }
 
 .point:hover {
-  background: #d1faff;
+  background: #ecf6fd;
   color: #0b2e4f;
 }
 
