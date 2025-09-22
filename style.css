@@ -311,19 +311,25 @@ body {
         font-size: 1.2rem;
       }
     }
- .flip-card-container {
+.flip-card-container {
   display: flex;
-  justify-content: space-around;
-  margin: 50px 0 50px 0;
-  gap: 20px;
+  justify-content: space-evenly;
+  margin: 50px 0 50px 100px;
+  gap: 100px; /* space between cards */
+  
+  max-height: 350px;  
+  max-width: 1700px;    /* limit max height */
+           /* spacing below cards */
 }
-
 .flip-card {
   background-color: transparent;
   width: 270px;
   height: 300px;
   perspective: 1000px;
+  
+ 
 }
+
 
 .flip-card-inner {
   position: relative;
@@ -376,5 +382,99 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 32px;
+  }
+}
+.cta-container {
+  background: linear-gradient(135deg, #ff7a00, #ff9500);
+  margin-top: 400px;  
+  margin-left: -1000px;
+  max-width: 1700px;
+  
+  border-radius: 20px;
+  padding: 60px 40px;
+  width: 1500px;
+  max-width: 1200px;
+  height:100px;
+  color: white;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+ 
+
+  /
+}
+
+/* Concentric circles effect */
+.cta-container::after {
+  content: "";
+  position: absolute;
+  right: -150px;
+  top: -50px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.1) 70%, transparent 100%);
+  border-radius: 50%;
+}
+
+.cta-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.cta-container p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.cta-buttons a {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.cta-buttons a::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+}
+
+.cta-buttons a:hover {
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive design */
+@media (max-width: 768px) {
+  .cta-container {
+    width: 90%;
+    padding: 40px 20px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cta-buttons a {
+    text-align: center;
   }
 }
