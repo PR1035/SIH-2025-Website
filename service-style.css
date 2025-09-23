@@ -1,0 +1,136 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main sidebar */
+.sidebar-menu {
+  position: absolute; /* Or 'fixed' if you want it to stay on scroll */
+  left: 0;
+  top: 200px; /* Adjust according to your header/navbar height */
+  width: 200px;
+  height: calc(100% - 120px); /* Fills from under navbar to bottom */
+  background: #fff;
+  border-right: 2px solid #e3e8f0;
+  z-index: 101;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar-menu li {
+  margin: 0;
+  padding: 0;
+  flex: 0 0 auto;
+}
+
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px 18px 18px;
+  color: #232338;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 1px solid #ececec;
+  transition: background 0.22s, color 0.22s;
+  min-height: 54px;
+  line-height: 1.18;
+  word-break: break-word;
+}
+
+.sidebar-menu a:hover, .sidebar-menu a.active {
+  background: #e0f4fa;
+  color: #1976d2;
+}
+
+.arrow {
+  margin-left: 10px;
+  color: #232338;
+  font-size: 20px;
+}
+.calculator-card {
+  width: 370px;
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 8px 24px rgba(50,90,180,.14);
+  margin: 45px auto 0 auto;
+  padding: 30px 26px 20px 26px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #264653;
+}
+
+.calculator-card h2 {
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #2c8db4;
+}
+
+.calculator-card label {
+  display: block;
+  margin-top: 18px;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.calculator-card input, .calculator-card select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 4px;
+  border-radius: 7px;
+  border: 1px solid #c1cce1;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.calculator-card input:focus, .calculator-card select:focus {
+  border-color: #2c8db4;
+  outline: none;
+}
+
+.calculator-card button {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(90deg, #40b6fc 0%, #3addc2 65%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.calculator-card button:hover {
+  background: linear-gradient(90deg, #2c8db4 0%, #40b6fc 100%);
+}
+
+.result-box {
+  margin-top: 22px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #e7f7fa;
+  font-size: 17px;
+  color: #174a5c;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(80,90,120,0.09);
+  display: none;
+}
