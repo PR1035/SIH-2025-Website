@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rainwater Saving Calculator</title>
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="service-style.css">
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f0f8ff;
+    }
+    .filter-sidebar-container {
+      display: flex;
+      max-width: 1200px;
+      margin: 20px auto;
+      gap: 20px;
+      padding: 0 10px;
+      align-items: flex-start;
+    }
+    .filter-cards-container {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .filter-card {
+      background: #e0f7fa;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .filter-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .filter-card h3 {
+      margin: 10px 0 8px;
+      color: #1565c0;
+    }
+    .filter-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 10px;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+    .filter-card ul li strong {
+      display: inline-block;
+      width: 140px;
+    }
+    .filter-card p {
+      font-size: 0.9rem;
+      color: #333;
+    }
+    .sidebar-menu {
+      width: 230px;
+      background: #cce7ff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-weight: bold;
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+    .sidebar-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar-menu ul li {
+      margin-bottom: 18px;
+    }
+    .sidebar-menu ul li a {
+      color: #1976d2;
+      text-decoration: none;
+      display: block;
+      padding: 8px 10px;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+    }
+    .sidebar-menu ul li a:hover {
+      background-color: #1976d2;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+    <div class="gradient-animation">RAIN WATER HARVESTING</div>
+<div class="header-image">
+  <img src="generated-image__1_-removebg-preview (1).png" alt="Rainwater Logo" />
+</div>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home Page</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li class="dropdown">
+      <a href="#contactus" class="dropbtn">Contact Us ▼</a>
+      <div class="dropdown-content">
+        <a href="details.html">Details</a>
+        <a href="faqs.html">FAQs</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<div class="filter-sidebar-container">
+  <!-- SIDEBAR FIRST FOR LEFT POSITIONING -->
+  <aside class="sidebar-menu">
+    <ul>
+      <li><a href="services.html">Calculate Water<br>Saved <span class="arrow">▶</span></a></li>
+      <li><a href="tank.html">Calculate Tank<br>Size <span class="arrow">▶</span></a></li>
+      <li><a href="filter.html">The Best Filter<br>For You <span class="arrow">▶</span></a></li>
+      <li><a href="installation.html">Installation <span class="arrow">▶</span></a></li>
+      <li><a href="cost-benefit.html">Cost Benefit <span class="arrow">▶</span></a></li>
+    </ul>
+  </aside>
+  <div class="filter-cards-container">
+    <!-- Filter cards go here -->
+  </div>
+</div>
+
+
+  <div class="filter-sidebar-container">
+    <div class="filter-cards-container">
+      <!-- Filter Card 1 -->
+      <div class="filter-card">
+        <img src="https://neerain.com/wp-content/uploads/2022/03/NeeRain-Filter.jpg" alt="NeeRain Filter" class="filter-img" />
+        <h3>NeeRain Rooftop Rainwater Filter</h3>
+        <ul>
+          <li><strong>Suitable Roof Area:</strong> Up to 150 sq.m (1615 sq.ft)</li>
+          <li><strong>Price:</strong> ₹2,950 – ₹12,000 (varies by model, e.g., Ultra, SS Pro)</li>
+          <li><strong>Pipe Fitting:</strong> Inlet & Outlet: 110 mm</li>
+          <li><strong>Size (H x W x D):</strong> 42.5 x 27 x 35 cm</li>
+          <li><strong>Filtration:</strong> Dual stage (500 & 200 micron)</li>
+        </ul>
+        <p>Durable, maintenance-free filter for medium to large homes. Reverse Y flow, transparent lid for live monitoring, no water loss, and no electricity required. Easy to install on rooftop or pipeline. Ideal for independent bungalows and small apartments.</p>
+      </div>
+
+      <!-- Filter Card 2 -->
+      <div class="filter-card">
+        <img src="https://shop.rainyfilters.com/cdn/shop/products/FL-250_1800x1800.jpg" alt="Rainy FL-250 Filter" class="filter-img" />
+        <h3>Rainy FL-250 Rainwater Filter</h3>
+        <ul>
+          <li><strong>Suitable Roof Area:</strong> Up to 250 sq.m (2700 sq.ft)</li>
+          <li><strong>Price:</strong> ₹7,649 – ₹26,500 (model FL-80 to FL-500)</li>
+          <li><strong>Pipe Fitting:</strong> Inlet: 110mm, Outlet: 90mm</li>
+          <li><strong>Filter Mesh:</strong> 250 micron SS-304; auto-clean, gravity flush</li>
+        </ul>
+        <p>Dual-intensity, self-cleaning filter supports auto flush-out, low maintenance, easy pipeline integration. Perfect for villas, large homes, or high rain intensity regions. Supports UV-stabilized housing and fits standard downpipes.</p>
+      </div>
+
+      <!-- Filter Card 3 -->
+      <div class="filter-card">
+        <img src="https://neerain.com/wp-content/uploads/2022/03/Ultra-Filter.jpg" alt="NeeRain Ultra Filter" class="filter-img" />
+        <h3>NeeRain Ultra</h3>
+        <ul>
+          <li><strong>Suitable Roof Area:</strong> Up to 150 sq.m (1615 sq.ft)</li>
+          <li><strong>Price:</strong> Approx ₹2,950</li>
+          <li><strong>Pipe Size:</strong> 110 mm inlet & outlet</li>
+          <li><strong>Filtration:</strong> Two-stage (500 & 200 micron)</li>
+          <li><strong>Dimensions:</strong> 42.5 x 27 x 35 cm</li>
+        </ul>
+        <p>Ideal for homes and apartments, low maintenance, transparent lid for monitoring, no power required.</p>
+      </div>
+
+      <!-- Filter Card 4 -->
+      <div class="filter-card">
+        <img src="https://shop.neerain.com/cdn/shop/products/nss-240-neerain-ss-pro-rooftop-rainwater-filter-blue_1024x1024.jpg" alt="NeeRain SS Pro" class="filter-img" />
+        <h3>NeeRain SS Pro</h3>
+        <ul>
+          <li><strong>Suitable Roof Area:</strong> Up to 250 sq.m (2691 sq.ft)</li>
+          <li><strong>Price:</strong> Approx ₹12,000</li>
+          <li><strong>Pipe Size:</strong> Compatible with standard 110 mm pipes</li>
+          <li><strong>Filtration:</strong> Permanent stainless steel mesh, auto flush</li>
+          <li><strong>Dimensions:</strong> 55 x 30 x 35 cm</li>
+        </ul>
+        <p>Durable, corrosion-resistant, auto flushing for self cleaning, suitable for larger homes and villas.</p>
+      </div>
+
+      <!-- Filter Card 5 -->
+      <div class="filter-card">
+        <img src="https://shop.rainyfilters.com/cdn/shop/products/FL-80-filter_1800x1800.jpg" alt="Rainy FL-80" class="filter-img" />
+        <h3>Rainy FL-80</h3>
+        <ul>
+          <li><strong>Suitable Roof Area:</strong> Up to 120 sq.m (1291 sq.ft)</li>
+          <li><strong>Price:</strong> Approx ₹7,000</li>
+          <li><strong>Pipe Size:</strong> Inlet 90 mm, Outlet 63 mm</li>
+          <li><strong>Filtration:</strong> 300 micron stainless steel mesh</li>
+          <li><strong>Features:</strong> Gravity flush, easy mounting on pipes</li>
+        </ul>
+        <p>Best for small homes and light rain regions, simple maintenance and easy fit for existing downpipes.</p>
+      </div>
+
+      <!-- Filter Card 6 -->
+      <div class="filter-card">
+        <img src="https://www.allegianceindia.in/image/cache/catalog/Products/RainWater/FL-500_PCO-700x700.png" alt="Rainy FL-500 Filter" class="filter-img" />
+        <h3>Rainy FL-500</h3>
+        <ul>
+          <li><strong>Suitable Roof Area:</strong> Up to 500 sq.m (5382 sq.ft)</li>
+          <li><strong>Price:</strong> Approx ₹40,000</li>
+          <li><strong>Pipe Size:</strong> Inlet 110 mm, Outlet 110 mm</li>
+          <li><strong>Filtration:</strong> 150 micron stainless steel mesh, automatic flush</li>
+          <li><strong>Features:</strong> Heavy duty housing for large scale rainwater harvesting systems</li>
+        </ul>
+        <p>Designed for commercial or very large homes with high water demand and extensive roof area.</p>
+      </div>
+    </div>
+
+    
+  </div>
+
+</body>
+</html>
