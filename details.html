@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>More — Rain Water Harvesting</title>
+
+  <!-- reuse your site stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* small page-specific spacing so content sits nicely on your existing background */
+    .page-wrapper {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 36px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 14px;
+      box-shadow: 0 8px 40px rgba(2,8,20,0.12);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    .page-title {
+      font-size: 34px;
+      margin-bottom: 12px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .lead {
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 24px;
+      font-size: 16px;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      border: 1px solid rgba(255,255,255,0.02);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 12px;
+    }
+
+    /* responsive */
+    @media (max-width: 920px) {
+      .content-grid { grid-template-columns: 1fr; }
+      .header-image { right: 12px; width: 120px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- same gradient title -->
+  <div class="gradient-animation">RAIN WATER HARVESTING</div>
+
+  <!-- header image (ensure your file path matches; logo.png assumed in repo root) -->
+  <div class="header-image">
+    <img src="generated-image__1_-removebg-preview (1).png" alt="Rainwater Logo">
+  </div>
+
+  <!-- NAVBAR: same structure as your other pages -->
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home Page</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li class="dropdown">
+      <a href="#contactus" class="dropbtn">Contact Us ▼</a>
+      <div class="dropdown-content">
+        <a href="details.html">Details</a>
+        <!-- updated: link to separate faqs page -->
+        <a href="faqs.html">FAQs</a>
+      </div>
+    </li>
+    <!-- optional: direct top-level link to FAQs -->
+   
+  </ul>
+</nav>
+
+  <main class="page-wrapper" role="main" aria-labelledby="more-title">
+    <h1 id="more-title" class="page-title">More Resources & Details</h1>
+    <p class="lead"></p>
+
+    <div class="content-grid">
+      <!-- Left column: main articles -->
+      <div>
+        <article class="card">
+          <h3>Implementation Guide</h3>
+          <div class="meta">Step-by-step | Beginner friendly</div>
+          <h4>For domestic purposes</h4>
+          <p>
+            
+This simple system captures rainwater at roof level and safely directs it into an underground harvesting tank through the downpipes. Using the integrated filter, the water is processed and moves through the distilling well into the tank.
+A floating suction hose is used to draw the water from just below the surface – where it is at its cleanest– and finally directed into the property and used until the tank is empty. 
+There are four main components to the system:<br>
+1. Underground tank(need to excavate land)<br>
+2. Tank cover  <br>
+3. Filter package<br>
+4. Pump package
+
+          </p>
+          <p>
+            <!-- Example: explain tank sizing, first-flush diverters, and recommended materials. Add diagrams or embed your rainwater diagram image inside this card by using: -->
+            <code><img src="DomesticRWH.png" alt="diagram" style="width: 300px;height: 300px;"></code>
+          </p>
+        </article>
+
+        <article class="card" style="margin-top:18px;">
+          <h3>Case Studies & Savings</h3>
+          <div class="meta">Real installations & estimated savings</div>
+          <p>
+            Document local success stories, before/after photos, and estimated annual water savings. Use your rainfall calculator (already in this repo) to estimate saving numbers per site.
+          </p>
+          <p>
+            Tip: add downloadable PDFs or links to your reports in this section for visitors to download.
+          </p>
+        </article>
+
+        <article class="card" style="margin-top:18px;">
+          <h3>How to get involved</h3>
+          <div class="meta">Community | Volunteering</div>
+          <p>
+            Explain how people or organizations can adopt rainwater harvesting at neighborhoods or schools. Add contact forms or link to a mailto: address for enquiries.
+          </p>
+        </article>
+      </div>
+
+      <!-- Right column: sidebar -->
+      <aside>
+        <div class="card">
+          <h3>Quick Links</h3>
+          <ul style="padding-left:16px; margin:8px 0 0 0; color:rgba(255,255,255,0.92);">
+            <li style="margin-bottom:8px;"><a href="faqs.html" style="color:inherit; text-decoration:underline;">FAQs</a></li>
+            <li style="margin-bottom:8px;"><a href="index.html#services" style="color:inherit; text-decoration:underline;">Services</a></li>
+            <li style="margin-bottom:8px;"><a href="https://www.india.gov.in/spotlight/jal-jeevan-mission" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Govt Guidelines</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="card" style="margin-top:18px;">
+          <h3>Downloads</h3>
+          <p style="color:rgba(255,255,255,0.88); font-size:14px; margin-bottom:12px;">
+            Attach PDFs, datasheets or diagrams for visitors to download.
+          </p>
+          <a class="card-button" href="#" style="display:inline-block; padding:10px 14px; border-radius:8px; background:rgba(42,111,247,0.95); color:#fff; text-decoration:none;">Download Guide (PDF)</a>
+        </div> -->
+
+        <!-- <div class="card" style="margin-top:18px;">
+          <h3>Contact</h3>
+          <p style="color:rgba(255,255,255,0.88); font-size:14px; margin-bottom:6px;">Have questions? Reach out.</p>
+          <p style="margin:0;"><a href="mailto:you@example.com" style="color:inherit; text-decoration:underline;">you@example.com</a></p>
+        </div> -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- load your main JS file (contains rainfall calculator + dropdown logic) -->
+  <script src="java.js"></script>
+</body>
+</html>
