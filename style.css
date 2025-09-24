@@ -2,7 +2,7 @@
   font-size: 48px;
   font-weight: bold;
   text-align: center;
-  background: linear-gradient(90deg, #6ff41dd4 0%, #7720fa 100%);
+  background: linear-gradient(to right, #25e2a7, #2a6ff7, #25e2a7);
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
@@ -35,7 +35,7 @@
   }
 }
 body {
-  background: linear-gradient(120deg, #2c8858 0%, #2c67f2 100%);
+  background: white ;
 }
 
 /* Navigation Bar */
@@ -186,7 +186,7 @@ body {
 }
 
 .point {
-  background: rgba(236, 9, 217, 0.12);
+  background: rgba(19, 194, 225, 0.12);
   color: #111212c7;
   font-size: 1.12em;
   font-weight: 500;
@@ -201,7 +201,7 @@ body {
 
 .point:hover {
   background: #ecf6fd;
-  color: #0b2e4f;
+  color: #d82727;
 }
 
 /* Faqs ka style */
@@ -236,7 +236,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   background: transparent;
-  color: #e8fbff;
+  color: #3a8d9e;
   border: 0;
   cursor: pointer;
   outline: none;
@@ -261,7 +261,7 @@ body {
 .faq-answer {
   padding: 16px 20px 22px 20px;
   line-height: 1.55;
-  color: rgba(255,255,255,0.88);
+  color: rgba(9, 10, 10, 0.88);
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015));
   border-top: 1px solid rgba(255,255,255,0.02);
   font-size: 15px;
