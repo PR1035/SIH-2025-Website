@@ -312,13 +312,16 @@ body {
       }
     }
 .flip-card-container {
+  /* position: absolute; */
   display: flex;
-  justify-content: space-evenly;
-  margin: 50px 0 50px 100px;
-  gap: 100px; /* space between cards */
-  
+  justify-content: center;
+  margin: 60px auto;
+  gap: 64px; /* space between cards */
+  flex-wrap: wrap;
   max-height: 350px;  
-  max-width: 1700px;    /* limit max height */
+  max-width: 1200px;  
+    /* limit max height */
+  
            /* spacing below cards */
 }
 .flip-card {
@@ -386,22 +389,16 @@ body {
 }
 .cta-container {
   background: linear-gradient(135deg, #ff7a00, #ff9500);
-  margin-top: 400px;  
-  margin-left: -1000px;
-  max-width: 1700px;
-  
-  border-radius: 20px;
-  padding: 60px 40px;
-  width: 1500px;
-  max-width: 1200px;
-  height:100px;
+  margin: 80px auto 120px;
+  max-width: 2000px;
+  padding: 60px 48px;
+  border-radius: 24px;
+  width: 2000px;
   color: white;
   text-align: left;
   position: relative;
   overflow: hidden;
- 
-
-  /
+  box-shadow: 0 8px 32px rgba(255, 138, 0, 0.6);
 }
 
 /* Concentric circles effect */
