@@ -134,3 +134,91 @@ body, html {
   box-shadow: 0 3px 8px rgba(80,90,120,0.09);
   display: none;
 }
+.center-container {
+   display: flex;
+   justify-content: center;   /* Centers horizontally */
+   align-items: center;       /* Centers vertically */
+   min-height: 80vh;          /* Adjust as needed for height */
+}
+.roadmap-section {
+    background: linear-gradient(90deg, #36e1b7 0%, #398ae1 100%);
+    margin: 34px;
+    border-radius: 20px;
+    padding: 30px 19px;
+    box-shadow: 0 2px 24px rgba(21,51,159,0.13);
+    color: #e3fcec;
+    font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+    max-width: 50vw;
+     ;
+}
+.roadmap-section h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #ffe463;
+    margin-bottom: 24px;
+    letter-spacing: .08em;
+    text-shadow: 2px 2px 6px #177c76;
+}
+.game-step {
+    margin-bottom: 27px;
+    padding: 12px 9px 14px 19px;
+    border-left: 7px solid #ffe463;
+    border-radius: 10px;
+    background: rgba(5,25,50, 0.12);
+    position: relative;
+}
+.step-icon {
+    position: absolute;
+    left: -30px;
+    top: 6px;
+    font-size: 2.1rem;
+}
+.game-step h3 {
+    font-size: 1.15rem;
+    color: #f0f8ff;
+    margin-bottom: 8px;
+    font-weight: 500;
+    margin-left: 28px;
+}
+.game-step ul {
+    margin-left: 42px;
+    color: #fdfcd3;
+    font-size: 1rem;
+}
+.img-slot {
+    border: 2px dashed #ffe463;
+    border-radius: 8px;
+    margin: 10px 0 2px 42px;
+    background: rgba(255,228,99,0.10);
+    width: 220px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4cfae8;
+    box-shadow: 0 0 8px #ffe463;
+}
+.game-progress {
+    text-align: center;
+    margin-top: 30px;
+    padding: 12px 0;
+    background: rgba(34,193,195,0.16);
+    border-radius: 12px;
+    color: #39e1b9;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+@media (max-width: 600px) {
+    .roadmap-section {
+        padding: 10px 2px;
+        font-size: 0.86rem;
+    }
+    .game-step h3 {
+        font-size: 1.02rem;
+    }
+    .img-slot {
+        width: 160px;
+        min-height: 60px;
+        font-size: 0.97rem;
+    }
+}
